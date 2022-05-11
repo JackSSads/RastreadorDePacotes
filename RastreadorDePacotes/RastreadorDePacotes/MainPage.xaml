@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RastreadorDePacotes.MainPage">
+
+    <StackLayout Background="#F4F6F6">
+        <Grid Margin="5, 5, 5, 5">
+            <StackLayout>
+                <Frame Background="#A6CAF5">
+                    <Label Text="Rastreador de Pacotes" HorizontalTextAlignment="Center" FontSize="Title"></Label>
+                </Frame>
+
+                <Entry x:Name="etInsert" Placeholder="Digite o código de rastreio" MaxLength="13" Margin="10, 30, 10, 30"></Entry>
+                <Button x:Name="btnBuscar" Text="Buscar" Clicked="btnBuscar_Clicked"/>
+                
+                <Line X1="100000"
+                Y1="0"
+                X2="0"
+                Y2="20"
+                Stroke="#c9c9c9"
+                StrokeDashArray="1"
+                Margin="0, 0, 0, -80"/>
+
+                <Label x:Name="lblPostado" FontSize="30" HorizontalTextAlignment="Center"></Label>
+                <Label x:Name="lblRPostado" FontSize="20" HorizontalTextAlignment="Center"></Label>
+                
+                <Label x:Name="lblStatus" FontSize="30"></Label>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>
